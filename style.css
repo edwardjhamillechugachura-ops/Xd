@@ -1,0 +1,153 @@
+
+body{
+  background: linear-gradient(#0a1a3a, #000);
+  font-family: 'Georgia', serif;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  color:white;
+}
+.card{
+  background:rgba(0,0,0,0.6);
+  padding:20px;
+  border-radius:20px;
+  text-align:center;
+  width:320px;
+}
+.card img{
+  width:100%;
+  border-radius:15px;
+}
+button{
+  margin-top:15px;
+  padding:10px 25px;
+  font-size:18px;
+  border:none;
+  border-radius:10px;
+  background:#c00;
+  color:white;
+  cursor:pointer;
+}
+button:hover{
+  background:#f00;
+}
+/* Fondo noche */
+body {
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(circle at bottom, #0b1d3a, #000814);
+  overflow: hidden;
+  font-family: Georgia, serif;
+}
+
+/* Contenedor */
+.night {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+body{
+  margin:0;
+  height:100vh;
+  background: radial-gradient(circle at bottom, #081a3a, #000);
+  overflow:hidden;
+  font-family:Georgia, serif;
+}
+
+.night{
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index:-1;
+}
+
+/* 🌙 LUNA */
+.moon{
+  position:absolute;
+  top:50px;
+  right:70px;
+  width:150px;
+  height:150px;
+  background:#fff;
+  border-radius:50%;
+  box-shadow:0 0 60px rgba(255,255,255,0.9);
+}
+
+/* ⭐ MUCHAS ESTRELLAS */
+.stars{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background-image:
+    radial-gradient(1px 1px at 5% 10%, white, transparent),
+    radial-gradient(2px 2px at 15% 30%, white, transparent),
+    radial-gradient(1px 1px at 25% 70%, white, transparent),
+    radial-gradient(2px 2px at 35% 20%, white, transparent),
+    radial-gradient(1px 1px at 45% 90%, white, transparent),
+    radial-gradient(2px 2px at 55% 40%, white, transparent),
+    radial-gradient(1px 1px at 65% 60%, white, transparent),
+    radial-gradient(2px 2px at 75% 80%, white, transparent),
+    radial-gradient(1px 1px at 85% 50%, white, transparent),
+    radial-gradient(2px 2px at 95% 15%, white, transparent);
+  background-repeat:repeat;
+  animation: starsMove 160s linear infinite,
+             starsTwinkle 3s infinite alternate;
+}
+
+/* ✨ Parpadeo */
+@keyframes starsTwinkle{
+  from{opacity:.6;}
+  to{opacity:1;}
+}
+
+/* 🌌 Movimiento */
+@keyframes starsMove{
+  from{transform:translateY(0);}
+  to{transform:translateY(1200px);}
+}
+
+/* 🌠 ESTRELLA FUGAZ */
+.shooting-star{
+  position:absolute;
+  width:2px;
+  height:100px;
+  background:linear-gradient(white, transparent);
+  animation:shoot 2s linear forwards;
+}
+
+@keyframes shoot{
+  from{
+    transform:translateX(0) translateY(0);
+    opacity:1;
+  }
+  to{
+    transform:translateX(-300px) translateY(300px);
+    opacity:0;
+  }
+}
+
+/* 💖 CORAZONES */
+.heart{
+  position:absolute;
+  color:#ff4d6d;
+  font-size:18px;
+  animation:float 6s linear forwards;
+}
+
+@keyframes float{
+  from{
+    transform:translateY(0);
+    opacity:1;
+  }
+  to{
+    transform:translateY(-600px);
+    opacity:0;
+  }
+}
